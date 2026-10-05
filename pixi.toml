@@ -1,0 +1,19 @@
+[workspace]
+authors = ["sara-graca <saravsgraca@gmail.com>"]
+channels = ["conda-forge"]
+name = "mbert-language-neurons"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+pytorch = ">=2.5"
+transformers = ">=4.46"
+datasets = "*"
+numpy = "*"
+scipy = "*"
+scikit-learn = "*"
+pandas = "*"
+matplotlib = "*"

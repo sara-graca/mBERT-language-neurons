@@ -63,7 +63,7 @@ def to_ablate(mask):
 
 
 if __name__ == "__main__":
-    P = np.stack([np.load(f"cache/P_{c}.npy") for c in LANGS])   # run compute.py first
+    P = np.stack([np.load(f"cache/P_{c}.npy") for c in LANGS]) 
     sel, lape, tau = lape_select(P)
     np.save("cache/sel.npy", sel)
     print("tau =", tau, "| neurons per language:", dict(zip(LANGS, sel.sum((1, 2)))))
